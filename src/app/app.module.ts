@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AmplifyAngularModule, AmplifyService} from 'aws-amplify-angular';
 import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -14,7 +15,9 @@ import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AmplifyUIAngularModule
+    AmplifyAngularModule,
+    AmplifyUIAngularModule,
+    HttpClientModule
   ],
   providers: [
     AmplifyService

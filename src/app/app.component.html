@@ -13,3 +13,9 @@
   <div>Hello, {{user.username}}</div>
   <!-- This is where you application template code goes -->
 </div>
+<div *ngIf="temp">
+  <div>City</div>
+  <div>{{temp.name}}</div>
+  <div>temp</div>
+  <div>{{temp.main.temp}}</div>
+</div>
